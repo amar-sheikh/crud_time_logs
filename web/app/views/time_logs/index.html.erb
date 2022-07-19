@@ -8,6 +8,7 @@
       <th>Duration (Hours)</th>
       <th>Description</th>
       <th>Status</th>
+      <th>Edit</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -18,7 +19,10 @@
         <td><%= time_log.duration_hours %></td>
         <td><%= time_log.description %></td>
         <td><%= time_log.status %></td>
+        <td><%= link_to 'Edit', edit_time_log_path(time_log) %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
+
+<%= link_to 'Create time log', new_time_log_path %>

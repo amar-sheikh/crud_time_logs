@@ -1,0 +1,8 @@
+<%= form_with(model: @time_log) do |f| %>
+<%= f.label :duration_hours %>
+<%= f.number_field :duration_hours %>
+<%= f.label :description %>
+<%= f.text_area :description %>
+
+<%= f.submit "Create" %>
+<% end %>

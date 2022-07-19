@@ -3,4 +3,7 @@
 setup:
 	bundle install
 	yarn install
-	rails db:setup && bundle exec rspec
+	bundle exec rails webpacker:install
+	bundle exec rails db:setup && bundle exec rspec
+	nvm use 16.14.1
+	
