@@ -1,0 +1,9 @@
+version: '3.7'
+
+services:
+  ruby:
+    image: registry.stadiumgoods.com/ruby-public/ruby-interview-time-logger:ruby3.0.2-1
+    volumes:
+      - ./web:/usr/src/app
+    ports:
+      - '3000:3000'
